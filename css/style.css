@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+body {
+  background-color: #1a192b;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "JetBrains Mono", monospace;
+  color: #f1f1f1;
+}
+
+a:hover {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #d1d1d1;
+}
+
+.img-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+}
+
+.img-container h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover h3 {
+  opacity: 1;
+}
+
+.img-container p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover p {
+  opacity: 1;
+}
