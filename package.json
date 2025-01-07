@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "chmod +x ./node_modules/.bin/tailwindcss && tailwindcss -i ./css/input.css -o ./dist/output.css"
+    "build": "chmod +x ./node_modules/.bin/tailwindcss && tailwindcss -i ./css/input.css -o ./public/output.css"
   },
   "keywords": [],
   "author": "",
